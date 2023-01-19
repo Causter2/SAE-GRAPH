@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.oui{
+    transition: all .2s ease-in-out;
+}
+
+.oui:hover {
+    color: rgb(233, 162, 8);
+    transform: scale(1.1);
+}
+
+h5{
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 190px;
+    margin: 0;
+    font-size: 80px;
+    color: rgb(206, 141, 22);
+    font-family: 'Merriweather', serif;
+    animation: apparition 0.8s ease-out;
+}
+
+@keyframes apparition{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1px);
+    }
+
+}
+
+#fleche {
+    transition: all .2s ease-in-out;
+    animation: apparitionfleche 0.5s ease-out;
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fleche:hover {
+    transform: scale(1.2);
+}
+
+@keyframes apparitionfleche{
+    from{
+          opacity: 0;
+        transform: rotate(-360deg) scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+
+}
+
+p{
+    font-size: 25px;
+}
+
+nav {
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 97.5%;
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    transform: translateY(-120%);
+    transition: transform 0.5s ease-in-out;
+    margin: 0;
+}
+
+.nav-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+}
+  
+nav.hidden {
+    transform: translateY(-120%);
+}
+  
+nav.show {
+    transform: translateY(0%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+  
+.chart-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    margin: 10px;
+    margin-top: 235px;
+    height: 500px;
+}
+  
+.chart {
+    height: 500px;
+    margin-top: 150px;
+}
+  
+.chart-description {
+    margin-right: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#graph{
+    height: 600px;
+}
