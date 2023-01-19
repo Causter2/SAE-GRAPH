@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAE-303</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="hidden">
+      <a href="index.html" class="nav-title">SAE-303 Data Visualisation</a>
+      <a class="oui" href="#titre1">Nombre de feu par année</a>
+      <a class="oui" href="#titre2">Lien 2</a>
+      <a class="oui" href="#titre3">Taille des feux par commune</a>
+    </nav>
+
+    <h5>Analyse des incendies en corse <br />1992 - 2022</h5>
+
+	<div class="fle">
+    <a href="#titre1"><img id="fleche" src="images/fleche.png" alt="" /></a>
+	</div>
+
+    <div class="container">
+      <div id="titre1" class="chart-container">
+        <div class="chart">
+          <!-- Inserer le graphique 1 ici -->
+          <div id="graph1" style="width: 100%; height: 100%"></div>
+        </div>
+        <div class="chart-description">
+          <h1>Nombre de feux par année</h1>
+          <p>
+            Nous pouvons constater que le nombre de feux présent sur le
+            territoire est en diminution quasiment constante depuis 1992 malgré
+            quelques hausses en 1999, 2007, 2010 et 2017 <br />
+            <br />
+            Pendant l'année 1992, pas moins de 1918 feux ont été comptabilisés
+            en Corse, durant l'année de 2022 ce ne sont que 352 feux qui ont eu
+            lieux sur le territoire, on constate donc la très grande regression
+            de leur nombre d'année en année
+          </p>
+        </div>
+      </div>
+
+      <div id="titre2" class="chart-container">
+        <div class="chart-description">
+          <!-- Inserer le graphique 1 ici -->
+          <div id="graph2" style="width: 100%; height: 100%"></div>
+          <h1>Nombre de feux par région</h1>
+          <p>
+            En regardant ce graphique, on remarque que les feux sont beaucoup plus fréquents en haute corse qu'en corse du sud <br>
+			En 1997, la corse du sud à comptabilisé plus de feu que la haute corse, et la tendance à l'air de s'inversé aussi après 2004
+          </p>
+        </div>
+		
+        <div class="chart">
+          <div id="container" style="width: 100%; height: 100%"><img id="graph" src="images/graph.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div id="titre3" class="chart-container">
+        <div class="chart">
+          <!-- Inserer le graphique 1 ici -->
+          <div id="graph3" style="width: 100%; height: 100%"></div>
+        </div>
+        <div class="chart-description">
+          <h1>Moyenne de la taille des feux par commune</h1>
+          <p>
+            Nous pouvons observer ici les 10 communes qui comptent le plus de feu à ce jour <br>
+			<br> Nous pouvons ainsi constater que le nombre de feux n'est pas proportionnel à l'empleur que celui-ci aura sur la surface brûlée <br>
+			Prenons pour exemple Ajaccio et Calenzana, Ajaccio est de loin la commune qui compte le plus de feu depuis 1992, cependant Calenzana compte un noubre de feu moins élevé, mais la surface touchée est bien supérieure
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
